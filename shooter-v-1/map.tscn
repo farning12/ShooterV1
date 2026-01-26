@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dyetfopkc13d2"]
+
+[ext_resource type="ArrayMesh" uid="uid://beyq6apc4fc7i" path="res://Dust2.obj" id="1_c7s6e"]
+
+[node name="Map" type="Node3D"]
+
+[node name="Dust2" type="MeshInstance3D" parent="."]
+transform = Transform3D(10, 0, 0, 0, -4.371139e-07, 10, 0, -10, -4.371139e-07, -127.42678, 29.9544, 99.0679)
+mesh = ExtResource("1_c7s6e")
