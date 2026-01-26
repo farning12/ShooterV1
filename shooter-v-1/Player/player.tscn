@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://cg1ix4c1opxk"]
+
+[ext_resource type="Script" uid="uid://db0wq41wm16y8" path="res://Player/player.gd" id="1_4ntmi"]
+[ext_resource type="PackedScene" uid="uid://d0d6qjaodsnrf" path="res://Assets/final low poly character  rigged.blend" id="1_l8h54"]
+[ext_resource type="Script" uid="uid://ynhkkfddd2sj" path="res://Player/camerasyst.gd" id="3_btcbx"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_bcbcq"]
+radius = 0.27539063
+height = 1.5579224
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_4ntmi")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0021361113, 0.83187795, 0.0553658)
+shape = SubResource("CapsuleShape3D_bcbcq")
+
+[node name="final low poly character  rigged" parent="CollisionShape3D" instance=ExtResource("1_l8h54")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.0021361113, -0.77995, -0.0553658)
+
+[node name="camerasyst" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4745767, 0.21857035)
+script = ExtResource("3_btcbx")
+
+[node name="Camera3D" type="Camera3D" parent="camerasyst"]
+transform = Transform3D(-0.9995066, 0, 0.031410683, 0, 1, 0, -0.031410683, 0, -0.9995066, 0, 0, 0)
