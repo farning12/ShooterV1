@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://cvq2m4gbcnvbd"]
+[gd_scene load_steps=7 format=3 uid="uid://cvq2m4gbcnvbd"]
 
 [ext_resource type="Material" uid="uid://c3el7cbkadcee" path="res://Assets/kenney_prototype-textures/prototype.tres" id="1_c6gwx"]
 [ext_resource type="PackedScene" uid="uid://cg1ix4c1opxk" path="res://Player/player.tscn" id="2_2dftf"]
+[ext_resource type="PackedScene" uid="uid://732vcv0mm3am" path="res://botnm.tscn" id="3_mlekv"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_2dftf"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -41,3 +42,9 @@ material = ExtResource("1_c6gwx")
 
 [node name="Player" parent="." instance=ExtResource("2_2dftf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.3464313, -0.6871682)
+
+[node name="botnm" parent="." instance=ExtResource("3_mlekv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -10)
+
+[node name="botnm2" parent="." instance=ExtResource("3_mlekv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.47174227, 0.05802834, 0.8403635)
