@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://732vcv0mm3am"]
+
+[ext_resource type="PackedScene" uid="uid://d0d6qjaodsnrf" path="res://Assets/final low poly character  rigged.blend" id="1_h0aml"]
+
+[node name="botnm" type="Node3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
+
+[node name="final low poly character  rigged" parent="CollisionShape3D" instance=ExtResource("1_h0aml")]
