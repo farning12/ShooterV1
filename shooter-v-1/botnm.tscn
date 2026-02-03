@@ -1,11 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://732vcv0mm3am"]
+[gd_scene load_steps=4 format=3 uid="uid://732vcv0mm3am"]
 
 [ext_resource type="PackedScene" uid="uid://d0d6qjaodsnrf" path="res://Assets/final low poly character  rigged.blend" id="1_h0aml"]
+[ext_resource type="Script" uid="uid://sx8ripp4g0hs" path="res://botnm.gd" id="1_hb4lo"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_h0aml"]
 size = Vector3(2.233139, 5.9185333, 1.1508789)
 
 [node name="botnm" type="CharacterBody3D"]
+slide_on_ceiling = false
+script = ExtResource("1_hb4lo")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.003840804, 0.789489, 0.06100589)
