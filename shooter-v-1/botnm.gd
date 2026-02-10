@@ -1,9 +1,11 @@
 extends CharacterBody3D
 
+var health = 50;
 
-var health = 100;
 
-
+func _process(delta: float) -> void:
+	if health <= 0:
+		queue_free()
 
 
 func _unhandled_input(event: InputEvent) -> void:

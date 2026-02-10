@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cvq2m4gbcnvbd"]
+[gd_scene format=3 uid="uid://cvq2m4gbcnvbd"]
 
 [ext_resource type="Material" uid="uid://c3el7cbkadcee" path="res://Assets/kenney_prototype-textures/prototype.tres" id="1_c6gwx"]
 [ext_resource type="PackedScene" uid="uid://cg1ix4c1opxk" path="res://Player/player.tscn" id="2_2dftf"]
@@ -17,30 +17,30 @@ sky = SubResource("Sky_bcbcq")
 tonemap_mode = 2
 glow_enabled = true
 
-[node name="World" type="Node3D"]
+[node name="World" type="Node3D" unique_id=35903935]
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=440260415]
 environment = SubResource("Environment_js7pq")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=798294777]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
 shadow_enabled = true
 
-[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=55104869]
 use_collision = true
 
-[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D"]
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1881437605]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9380493, 3.791052, 0)
 size = Vector3(30, 7.6821046, 30)
 material = ExtResource("1_c6gwx")
 
-[node name="CSGBox3D2" type="CSGBox3D" parent="CSGCombiner3D"]
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGCombiner3D" unique_id=496078104]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.938, 3.9369102, 0)
 operation = 2
 size = Vector3(29, 7.7747316, 29)
 material = ExtResource("1_c6gwx")
 
-[node name="botnm" parent="." instance=ExtResource("3_mlekv")]
+[node name="botnm" parent="." unique_id=1102275278 instance=ExtResource("3_mlekv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -10)
 
-[node name="Player" parent="." instance=ExtResource("2_2dftf")]
+[node name="Player" parent="." unique_id=1375003963 instance=ExtResource("2_2dftf")]
