@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://ky4m55kmqx5j"]
+
+[ext_resource type="PackedScene" uid="uid://db8nljhdr5h7p" path="res://Assets/Universal Animation Library[Standard]/Unreal-Godot/UAL1_Standard.glb" id="1_56flh"]
+
+[node name="UAL1_Standard" unique_id=278873949 instance=ExtResource("1_56flh")]
+
+[node name="GeneralSkeleton" parent="Armature" parent_id_path=PackedInt32Array(846291472) index="0" unique_id=310555194]
+bones/8/rotation = Quaternion(0, 0.7722626, -0.6353035, 0)
+bones/32/rotation = Quaternion(0, 0.7544977, -0.6563027, 0)

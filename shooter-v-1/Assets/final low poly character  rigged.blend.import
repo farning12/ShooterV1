@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://d0d6qjaodsnrf"
-path="res://.godot/imported/final low poly character  rigged.blend-7b4107750e93631bb926df1d75f19a3e.scn"
+valid=false
 
 [deps]
 
 source_file="res://Assets/final low poly character  rigged.blend"
-dest_files=["res://.godot/imported/final low poly character  rigged.blend-7b4107750e93631bb926df1d75f19a3e.scn"]
 
 [params]
 
@@ -48,6 +47,7 @@ blender/meshes/colors=false
 blender/meshes/uvs=true
 blender/meshes/normals=true
 blender/meshes/export_geometry_nodes_instances=false
+blender/meshes/gpu_instances=false
 blender/meshes/tangents=true
 blender/meshes/skins=2
 blender/meshes/export_bones_deforming_mesh_only=false

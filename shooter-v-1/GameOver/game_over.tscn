@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://d1sptfid0u274"]
 
-[ext_resource type="Script" uid="uid://cnu3abc8gfrfm" path="res://game_over.gd" id="1_y26ei"]
+[ext_resource type="Script" uid="uid://cnu3abc8gfrfm" path="res://GameOver/game_over.gd" id="1_g2khx"]
 
 [node name="GameOver" type="Control" unique_id=1598175462]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_y26ei")
+script = ExtResource("1_g2khx")
 
 [node name="Panel" type="Panel" parent="." unique_id=202329208]
 layout_mode = 0

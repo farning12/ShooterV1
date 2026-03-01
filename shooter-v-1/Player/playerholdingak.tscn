@@ -1,19 +1,19 @@
-[gd_scene format=3 uid="uid://cg1ix4c1opxk"]
+[gd_scene format=3 uid="uid://cmprf4bjxpkkt"]
 
-[ext_resource type="Script" uid="uid://db0wq41wm16y8" path="res://Player/player.gd" id="1_4ntmi"]
-[ext_resource type="Script" uid="uid://ynhkkfddd2sj" path="res://Player/camerasyst.gd" id="3_btcbx"]
-[ext_resource type="PackedScene" uid="uid://72gmklq3dgag" path="res://yellowbodyori.tscn" id="3_gwnis"]
+[ext_resource type="Script" uid="uid://db0wq41wm16y8" path="res://Player/player.gd" id="1_ue0fm"]
+[ext_resource type="Script" uid="uid://ynhkkfddd2sj" path="res://Player/camerasyst.gd" id="2_nyd2r"]
+[ext_resource type="PackedScene" uid="uid://72gmklq3dgag" path="res://yellowbodyori.tscn" id="3_m1v2p"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_k53q1"]
 radius = 0.16259766
 height = 1.8349609
 
 [node name="Player" type="CharacterBody3D" unique_id=1633935471]
-script = ExtResource("1_4ntmi")
+script = ExtResource("1_ue0fm")
 
 [node name="camerasystem" type="Node3D" parent="." unique_id=1704871202]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4745767, 0.21857035)
-script = ExtResource("3_btcbx")
+script = ExtResource("2_nyd2r")
 
 [node name="Camera3D" type="Camera3D" parent="camerasystem" unique_id=2111649433]
 transform = Transform3D(-0.9995066, 0, 0.031410683, 0, 1, 0, -0.031410683, 0, -0.9995066, 0, 0, 0)
@@ -22,4 +22,4 @@ transform = Transform3D(-0.9995066, 0, 0.031410683, 0, 1, 0, -0.031410683, 0, -0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.007372141, 0.9155786, 0.027408361)
 shape = SubResource("CapsuleShape3D_k53q1")
 
-[node name="Design_Holding_Ak47" parent="." unique_id=278873949 instance=ExtResource("3_gwnis")]
+[node name="Design_Holding_Ak47" parent="." unique_id=278873949 instance=ExtResource("3_m1v2p")]

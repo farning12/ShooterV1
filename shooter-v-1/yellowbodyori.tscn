@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://72gmklq3dgag"]
+
+[ext_resource type="PackedScene" uid="uid://db8nljhdr5h7p" path="res://Assets/Universal Animation Library[Standard]/Unreal-Godot/UAL1_Standard.glb" id="1_j58r3"]
+
+[node name="UAL1_Standard" unique_id=278873949 instance=ExtResource("1_j58r3")]
